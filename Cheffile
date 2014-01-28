@@ -5,4 +5,5 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'database'
 cookbook 'apt'
 cookbook 'mysql'
+cookbook 'memcached'
 cookbook "eol-cookbook", :path => "./"

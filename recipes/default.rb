@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: eol.org
+# Cookbook Name:: eol-cookbook
 # Recipe:: default
 #
 # Copyright 2014, Woods Hole Marine Biological Laboratory
@@ -16,4 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 include_recipe 'apt'

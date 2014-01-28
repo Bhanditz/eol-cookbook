@@ -4,4 +4,5 @@
 .librarian
 tmp/
 .ruby-version
+.ruby-gemset
 *~

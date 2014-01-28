@@ -16,3 +16,7 @@
 @test "EOL databases exist" {
   [ "$mysql -u root -p`grep "SET PASSWORD FOR 'root'" /etc/mysql_grants.sql | cut -d "'" -f 6` -e \"SHOW DATABASES\"()" ]
 }
+
+@test "Memcached is installed" {
+  [ "$(memcached -info | grep 'memcached 1[.]4')" ]
+}

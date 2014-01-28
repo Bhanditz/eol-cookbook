@@ -33,6 +33,13 @@ SITE
     yum-epel (0.2.0)
       yum (~> 3.0)
 
+GIT
+  remote: https://github.com/mbl-cli/virtuoso-cookbook
+  ref: master
+  sha: 1f5a95547caa9e3b55250f91c1b2d64e30077355
+  specs:
+    virtuoso (0.0.3)
+
 PATH
   remote: ./
   specs:
@@ -45,4 +52,5 @@ DEPENDENCIES
   memcached (>= 0)
   mysql (>= 0)
   redisio (>= 0)
+  virtuoso (>= 0)
 

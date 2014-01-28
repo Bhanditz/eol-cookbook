@@ -1,6 +1,7 @@
 .bundle
 .kitchen/
 .kitchen.local.yml
+kitchen.yml
 .librarian
 tmp/
 .ruby-version

@@ -8,3 +8,4 @@ cookbook 'eol-cookbook', :path => "./"
 cookbook 'memcached'
 cookbook 'mysql'
 cookbook 'redisio'
+cookbook 'virtuoso', git: 'https://github.com/mbl-cli/virtuoso-cookbook'

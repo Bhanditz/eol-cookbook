@@ -12,5 +12,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[eol.org::default]
+      - recipe[eol-cookbook::default]
     attributes:

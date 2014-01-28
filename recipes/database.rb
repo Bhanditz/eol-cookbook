@@ -18,3 +18,21 @@
 #
 
 include_recipe 'mysql::server'
+include_recipe 'database::mysql'
+
+node.default['mysql']['tunable']['innodb_buffer_pool_size'] = "256M"
+
+
+def each_database
+  %w( eol eol_logging ).each do |db_type|
+    database = "#{db_type}_#{node['eol']['environment']}"
+    yield database
+  end
+end
+
+each_database do |db|
+  mysql_database db do
+    connection ({:username => "root", :password => node['mysql']['server_root_password']})
+    action :create
+  end
+end

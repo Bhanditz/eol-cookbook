@@ -6,6 +6,6 @@ description      'Installs/Configures eol-cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-%w(apt database memcached mysql).each do |cb|
+%w(apt database memcached mysql redisio).each do |cb|
   depends cb
 end

@@ -12,7 +12,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]","recipe[eol-cookbook::memcached]"]
+      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]","recipe[eol-cookbook::memcached]","recipe[eol-cookbook::redis]"]
     attributes:
       mysql:
         server_debian_password: "test"

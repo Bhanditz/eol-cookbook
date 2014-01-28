@@ -2,6 +2,7 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'database'
 cookbook 'apt'
 cookbook 'mysql'
 cookbook "eol-cookbook", :path => "./"

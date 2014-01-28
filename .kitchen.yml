@@ -7,15 +7,14 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
-#  - name: centos-6.4
+  #  - name: centos-6.4
 
 suites:
   - name: default
     run_list:
-      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]"]
+      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]","recipe[eol-cookbook::memcached]"]
     attributes:
       mysql:
         server_debian_password: "test"
         server_root_password: "test"
         server_repl_password: "test"
- 

@@ -28,6 +28,7 @@ SITE
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
     ulimit (0.3.2)
+    users (1.6.0)
     xfs (1.1.0)
     yum (3.0.6)
     yum-epel (0.2.0)
@@ -45,4 +46,5 @@ DEPENDENCIES
   memcached (>= 0)
   mysql (>= 0)
   redisio (>= 0)
+  users (>= 0)
 

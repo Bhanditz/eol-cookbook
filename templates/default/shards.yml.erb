@@ -1,0 +1,17 @@
+octopus:
+  verify_connection: true
+  replicated: true
+  environments:
+    - <%= @environment %>
+
+  <%= @environment %>:
+    slave:
+      adapter:  mysql2
+      host:     <%= @slave_host %>
+      <%- if @db_slave_port %>
+      port:     <%= @db_slave_port %>
+      <%- end %>
+      username: <%= @slave_user %>
+      password: <%= @slave_password %>
+      encoding: utf8
+      database: <%= @db_prefix %><%= @db_environment %>

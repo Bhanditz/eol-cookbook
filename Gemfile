@@ -1,8 +1,9 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "test-kitchen"
+gem "chef-zero"
 gem "librarian-chef"
+gem "test-kitchen"
 
 group :vagrant do
   gem "kitchen-vagrant"

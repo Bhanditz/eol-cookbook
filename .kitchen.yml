@@ -11,8 +11,10 @@ platforms:
 
 suites:
   - name: default
+    data_bags_path: 'test/integration/default/data_bags'
     run_list:
-      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]","recipe[eol-cookbook::memcached]","recipe[eol-cookbook::redis]"]
+      # - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::database]","recipe[eol-cookbook::memcached]","recipe[eol-cookbook::redis]","recipe[eol-cookbook::app]"]
+      - ["recipe[eol-cookbook::default]","recipe[eol-cookbook::app]"]
     attributes:
       mysql:
         server_debian_password: "test"

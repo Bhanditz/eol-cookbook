@@ -1,0 +1,7 @@
+{
+  "id" : "eol_development_deploy",
+  "deploy" : "any",
+  "authorized_keys" : {
+    "default" : "ssh-rsa yAHIUEFNkrngkernglerkjngrjnghRUw== nobody@mymachine.local"
+  }
+}

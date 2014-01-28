@@ -95,6 +95,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  chef-zero
   kitchen-docker
   kitchen-vagrant
   librarian-chef

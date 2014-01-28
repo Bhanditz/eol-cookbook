@@ -3,3 +3,5 @@
 .kitchen.local.yml
 .librarian
 tmp/
+.ruby-version
+*~

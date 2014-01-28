@@ -1,0 +1,20 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.3.4)
+    build-essential (1.4.2)
+    mysql (4.0.20)
+      build-essential (~> 1.4)
+      openssl (~> 1.1)
+    openssl (1.1.0)
+
+PATH
+  remote: ./
+  specs:
+    eol-cookbook (0.1.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  eol-cookbook (>= 0)
+  mysql (>= 0)
+

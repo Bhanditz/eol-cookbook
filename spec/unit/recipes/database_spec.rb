@@ -9,7 +9,6 @@ describe 'eol-cookbook::database' do
     end.converge(described_recipe)
   end
 
-  # FIXME: tests fail because of missing cookbook build-essential
   it 'include mysql::server recipe' do
     expect(chef_run).to include_recipe('mysql::server')
   end

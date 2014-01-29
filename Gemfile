@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'chefspec'
+gem "chefspec"
 gem "test-kitchen"
 gem "librarian-chef"
 

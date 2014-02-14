@@ -7,3 +7,5 @@ tmp/
 .ruby-version
 .ruby-gemset
 *~
+bundle_bin
+cookbooks

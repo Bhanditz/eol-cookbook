@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: eol-cookbook
-# Recipe:: collectd_custom_plugins
+# Recipe:: collectd_client
 #
 # Copyright 2014, Woods Hole Marine Biological Laboratory
 #
@@ -17,18 +17,7 @@
 # limitations under the License.
 #
 
-custom_defaults = data_bag_item('custom_defaults', 'config') rescue {}
-
-monitor_defaults = custom_defaults['monitor'] || {}
-node.default['monitor']['graphite_address'] = monitor_defaults['graphite_address'] || 'localhost'
-node.default['monitor']['graphite_port'] = monitor_defaults['graphite_port'] || 2003
-
-include_recipe 'collectd'
-
-collectd_plugin 'write_graphite' do
-  template 'write_graphite.conf.erb'
-end
-
-collectd_plugin 'logfile' do
-  options log_level: 'info', file: '/var/log/collectd.log', timestamp: true
-end
+include_recipe 'collectd::client'
+include_recipe 'collectd_plugins'
+include_recipe 'collectd_plugins::load'
+include_recipe 'eol-cookbook::collectd_custom_plugins'

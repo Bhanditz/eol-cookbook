@@ -6,6 +6,27 @@ description      'Installs/Configures eol-cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-%w(apt database memcached mysql redisio virtuoso).each do |cb|
+%w(
+  apt
+  build-essential
+  chef-client
+  collectd
+  collectd_plugins
+  curl
+  database
+  git
+  graphite
+  memcached
+  monitor
+  mysql
+  omnibus_updater
+  postfix
+  redisio
+  statsd
+  sudo
+  timezone
+  vim
+  virtuoso
+  ).each do |cb|
   depends cb
 end

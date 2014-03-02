@@ -3,9 +3,23 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'chef-client'
+cookbook 'collectd', git: 'https://github.com/coderanger/chef-collectd'
+# this is a fork from the original, to include the collectd "load" plugin
+cookbook 'collectd_plugins', git: 'https://github.com/Shopify/chef-collectd_plugins.git'
+cookbook 'curl'
 cookbook 'database'
 cookbook 'eol-cookbook', :path => "./"
+cookbook 'git'
+cookbook 'graphite'
 cookbook 'memcached'
+cookbook 'monitor'
 cookbook 'mysql'
+cookbook 'omnibus_updater'
 cookbook 'redisio'
+cookbook 'statsd', git: 'https://github.com/librato/statsd-cookbook.git'
+cookbook 'sudo'
+cookbook 'timezone'
+cookbook 'vim'
 cookbook 'virtuoso', git: 'https://github.com/mbl-cli/virtuoso-cookbook'
